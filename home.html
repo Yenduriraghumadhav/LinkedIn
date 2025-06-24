@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li>
+          <div id="container" class="search-box">
+            <input  oninput="search()" class="form" id="text" type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+          </div>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-house"></i>
+          <a class="nav-buttons" href="./home.html" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-grip"></i>
+          <a class="nav-buttons" href="./personal.html" style="color: black;">personal-details</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-bell"></i>
+          <a class="nav-buttons" href="./notifications.html" style="color: black;">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-bookmark"></i>
+          <a class="nav-buttons" href="./save.html" style="color: black;">Saved</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-sign-out-alt"></i>
+          <a class="nav-buttons" href="./login.html" style="color: black;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div onclick="personal()" class="container">
+    <div class="side-bars" style="display: flex; flex-direction: column;">
+      <div id="personal-details">
+        <h3>Rajesh var Reddy</h3>
+        <p>Student of : Pulla Reddy Engineering Collage Kurnool</p>
+        <p>Skills: C ,C++,Java-Script,Python</p>
+        <p>Hyderabad,Telangana</p>
+      </div>
+      <div class="slide">
+        <h3>Notifications :</h3>
+        <p style="margin-left: 10px; margin-top: 10px;"><i class="fa-brands fa-cc-amazon-pay"></i> Amazon.....</p>
+      </div>
+      <div class="Saved">
+        <p><i style="color: black;" class="fa-solid fa-bookmark"></i><a href="./save.html">Saved items</a></p>
+        <p style="margin-top: 10px;"><i style="color: black;" class="fa-solid fa-people-group"></i>Groups</p>
+        <p style="margin-top: 10px;"><i style="color: black;" class="fa-solid fa-newspaper"></i>Newsletters</p>
+        <p style="margin-top: 10px;"><i style="color: black;" class="fa-solid fa-calendar-days"></i>Calender</p>
+      </div>
+    </div>
+    <div>
+      <div id="box"></div>
+    </div>
+    <div>
+      <div class="search-bar">
+        <div class="extra-information">
+          <div>
+            <h3 style="margin-right: 100px;">LinkedIn News:-</h3>
+            <h5 style="margin-right: 170px; margin-top: 10px;">Top-stories:</h5>
+            <ul style="margin-top: 10px;">
+              <li>
+                <div>India, Pakistan tensions:Latest updates</div>
+                <span>2h ago . 67,879 renders</span>
+              </li>
+              <li>
+                <div>Government lifts curbs on 32 airports</div>
+                <span>1h ago . 27,099 renders</span>
+              </li>
+              <li>
+                <div>US and China announce tariff deal</div>
+                <span>4h ago . 77,899 renders</span>
+              </li>
+              <li>
+                <div>India-UK FTA: What it means <br></div>
+                <span>10h ago . 97,899 renders</span>
+              </li>
+              <li>
+                <div>US and China announce deal</div>
+                <span>3h ago . 67,099 renders</span>
+              </li>
+              <li>
+                <div>IPL to resume from May 17</div>
+                <span>1h3ago . 2,099 renders</span>
+              </li>
+              <li>
+                <div>Foreign investors bullish on India</div>
+                <span>1h ago . 989 renders</span>
+              </li>
+              <li>
+                <div>How to get hired at a top tech firm</div>
+                <span>6h ago . 1,199 renders</span>
+              </li>
+              <div style="display: flex; margin-top: 10px;"><h3 >Show Less <i class="fa-solid fa-angle-up"></i></h3></div>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="adds">
+        <img style="width: 275px; height: 250px; margin-top: 50px; border-radius: 50px; margin-right: 100px;"
+          src="adds.png" alt="Adds-image">
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

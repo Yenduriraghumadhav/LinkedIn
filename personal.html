@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="collaps" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li>
+          <div class="search-box">
+            <input class="form" type="text" placeholder="Search...">
+            <i style="color: #f2f2f2; " class="fas fa-search"></i>
+          </div>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-house"></i>
+          <a class="nav-buttons" href="./home.html" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-grip"></i>
+          <a class="nav-buttons" id="nav-button" href="./personal.html" style="color: black;">personal-details</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-bell"></i>
+          <a class="nav-buttons" href="./notifications.html" style="color: black;">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-bookmark"></i>
+          <a class="nav-buttons" href="./save.html" style="color: black;">Saved</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-sign-out-alt"></i>
+          <a class="nav-buttons" href="./login.html" style="color: black;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="sub-class">
+      <!-- <i class="fa-solid fa-registered"></i> -->
+      <div id="personal-details">
+        <div id="hiliet">
+          <img class="img-animi" src="/deatils-img.jpeg" style="margin-top: 5px; margin-left: 10px;" alt="img">
+        </div>
+        <div class="collage">
+          <h3>Rajesh var Reddy</h3><span>Pulla Reddy Engineering Collage, Kurnool</span>
+        </div>
+        <hr>
+        <p style="margin-top: 10px;">Student of : Pulla Reddy Engineering Collage Kurnool</p>
+        <p style="margin-top: 10px;">Skills: C , C++, Java-Script, Python, Html, Css</p>
+        <p style="margin-top: 10px;">Hyderabad,Telangana</p>
+        <p style="color: blue; margin-top: 10px;">2 connections</p>
+        <div class="buttons">
+          <button style="padding: 10px; border-radius: 50px;">Open to</button>
+          <button style="border-radius: 50px; padding: 10px;">Add Profile</button>
+          <button style="border-radius: 50px; padding: 10px;">Enhance Property</button>
+          <button style="border-radius: 50px; padding: 10px;">Resources</button>
+        </div>
+      </div>
+      <div class="suggestions">
+        <div>
+          <h2>Suggested for you</h2>
+          <div style="display: flex; margin-top: 10px; gap: 10px;"><i class="fa-solid fa-eye"></i>
+            <p>Private to you</p>
+          </div>
+          <div class="sub-suggestions">
+            <div><img src="/summary.svg" alt="img">
+              <h2>Which industry do you work?</h2>
+            </div>
+            <p>Members who add an industry receive up to 2.5 <br> times as many profile views.</p>
+            <button class="suggestion-button" style="border-radius: 50px; padding: 10px; margin-top: 10px;">Add a
+              industry</style=></button>
+          </div>
+        </div>
+        <div class="sub-suggestions1">
+          <div><img src="/which-industry.svg" alt="img">
+            <h2>Write a summary to highlight</h2>
+          </div>
+          <p>Members who include a summary receive up to 3.9 <br> times as many profile views.</p>
+          <button class="suggestion-button" style="border-radius: 50px; padding: 10px; margin-top: 10px;">Add a summary
+            </style=>
+        </div>
+      </div>
+      <div class="Analytics">
+        <h2>Analytics : </h2>
+        <div style="display: flex; gap: 10px; margin-top: 10px;"><i class="fa-solid fa-eye"></i>
+          <p>Private to you</p>
+        </div>
+        <div class="sub-Analytics">
+          <div style="display: flex; gap: 10px; margin-top: 10px;"><i class="fa-solid fa-user"></i>
+            <p>1 Profile view</p>
+          </div>
+          <p style="margin-top: 10px; margin-left: 25px;">Discover who's viewed your profile.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="parent-activity">
+          <h2>Activity : </h2><button class="button">Create a post</button><i style="margin-top: 8px;"
+            class="fa-solid fa-pencil"></i>
+        </div>
+        <h4 style="margin-top: 5px;">You haven’t posted yet</h4>
+        <p style="margin-top: 5px;">Posts you share will be displayed here.</p>
+        <div class="break-point"></div>
+        <div class="child-activity">
+          <h2>Show all activity<i style="margin-left: 10px; margin-top: 10px;" class="fa-solid fa-arrow-right"></i></h2>
+        </div>
+      </div>
+      <div class="parent-skills">
+        <h2>Skills</h2>
+        <p>Communicate your fit for new opportunities – 50% of hirers use skills data to fill their roles</p>
+        <div style="margin-top: 8px; color: lightslategrey;">
+          <h3>Soft Skills</h3>
+          <div id="skillsName">
+          </div>
+          <div id="addSkill">
+          </div>
+        </div>
+        <div class="break-point"></div>
+        <button onclick="addSkill()" class="add-skills">Add skills</button>
+      </div>
+      <div class="parent-interests">
+        <h2>Interests</h2>
+        <div class="child-interests">
+          <h3>Top Voices</h3>
+          <h3>Companies</h3>
+        </div>
+        <div class="break-point"></div>
+        <div>
+         <div class="sibling-child"><img style="width: 60px; height: 60px; border-radius: 50px;" src="/billigats.jpeg" alt=""><h2 style="margin-top: 10px;">Bill Gates</h2></div>
+         <div class="sub-child">
+          <p> Chair, Gates Foundation and Founder, Breakthrough EnergyChair, Gates Foundation and Founder, <br> BreakthroughEnergy</p>
+            <p>37,868,478 followers</p>
+            <button style="padding: 10px; border-radius: 50px; margin-top: 10px;">followering</button>
+         </div>   
+        </div>
+      </div>
+    </div>
+    <div class="sub-class1">
+      <div class="url-profile">
+        <div class="profile-languages">
+          <h2>Profile Language</h2> <span><i class="fa-solid fa-pencil"></i></span>
+        </div>
+        <span class="Language">Telugu,English,Hindi</span>
+        <hr>
+        <div class="profile-languag">
+          <h2>Public profile & URL</h2><span><i class="fa-solid fa-pencil"></i></span>
+        </div>
+        <p style="margin-top: 10px;">www.linkedin.com/in/rajesh-346a26482</p>
+      </div>
+      <div class="parent-promted">
+        <div style="display: flex; gap: 10px;">
+           <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: -10px;" src="sbi-promotion.jpeg" alt="img-promoted">
+           <h2>State Bank of India</h2>
+        </div>
+        <div class="break-point"></div>
+        <p style="margin-top: 10px;">Rajesh, grow your career by following <br> State Bank of India</p>
+        <p style="margin-top: 10px;">Keep up with interesting, relevant updates</p>
+        <div class="child-promoted">
+          <img style="width: 20px; height: 20px; border-radius: 50px; margin-top: 10px;" src="billigats.jpeg" alt="img">
+          <p style="margin-top: 10px;">also follows</p>
+        </div>
+        <button class="sub-button">Follow</button>
+      </div>
+      <div class="connection">
+        <h3>Who your viewers also viewed</h3>
+        <div style="display: flex; gap: 10px; margin-top: 10px;"><i class="fa-solid fa-eye"></i>
+          <p>Private to you</p>
+        </div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img11.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>Madhav Raghu .</h3><p>3rd+</p></div>
+                <p>Associate at Toppr</p>
+              </div>
+              <button class="connection-buttons" id="connet" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;" onclick="changed()">Connect</button>
+          </div>
+          <div class="break-point"></div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img12.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>poli Naidu.</h3><p>3rd+</p></div>
+                <p>FSD Developer</p>
+              </div>
+              <button class="connection-buttons" id="connet2" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;" onclick="addedd()" >Connect</button>
+          </div>
+          <div class="break-point"></div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img21.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>Manju .</h3><p>3rd+</p></div>
+                <p>Backend Developer</p>
+              </div>
+              <button class="connection-buttons" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;" id="connet3" onclick="changename()">Connect</button>
+          </div>
+          <div class="break-point"></div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img30.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>vamsi .</h3><p>3rd+</p></div>
+                <p>FSD Frontend Developer</p>
+              </div>
+              <button class="connection-buttons" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;" id="connet4" onclick="addedname()">Connect</button>
+          </div>
+      </div>
+      <div class="connection">
+        <h3>Pepole U May Know</h3>
+        <div style="display: flex; gap: 10px; margin-top: 10px;"><i class="fa-solid fa-eye"></i>
+          <p>Private to you</p>
+        </div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img21.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>Siva shankhar .</h3><p></p></div>
+                <p>Associate at Toppr</p>
+              </div>
+              <button class="connection-buttons" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;">Connect</button>
+          </div>
+          <div class="break-point"></div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img24.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>Krishna.</h3><p></p></div>
+                <p>FSD Developer</p>
+              </div>
+              <button class="connection-buttons" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;">Connect</button>
+          </div>
+          <div class="break-point"></div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img43.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>Tejesh war .</h3><p></p></div>
+                <p>Backend Developer</p>
+              </div>
+              <button class="connection-buttons" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;">Connect</button>
+          </div>
+          <div class="break-point"></div>
+          <div class="sub-connection1">
+              <img style="width: 50px; height: 50px; border-radius: 50px; margin-top: 10px;" src="/assets/img50.jpeg" alt="img">
+              <div class="personals">
+                <div style="display: flex; gap: 5px;"><h3>Surendhra .</h3><p></p></div>
+                <p>FSD Frontend Developer</p>
+              </div>
+              <button class="connection-buttons" style="padding: 10px; border-radius: 50px; margin-top: 20px; margin-left: 80px; width: 120px;">Connect</button>
+          </div>
+           <div class="break-point"></div>
+           <h3 style="text-align: center; margin-top: 10px;">Show all</h3>
+      </div>
+      <div class="images">
+        <img style="width: 330px; height: 280px; margin-top: 20px; border-radius: 50px; margin-right: 100px;"
+          src="adds.png" alt="Adds-image">
+      </div>
+    </div>
+    </div>
+    <div class="global-footer">
+         <div>
+              <h5 class="child-footer1">About</h5>
+              <h5 class="child-footer1" style="margin-top: 10px;">Professional Community Policies</h5>
+              <h5 class="child-footer1" style="margin-top: 10px;">Privacy & Terms</h5>
+              <h5 class="child-footer1" style="margin-top: 10px;">Sales Solutions</h5>
+              <h5 class="child-footer1" style="margin-top: 10px;">Safety Center</h5>
+         </div> 
+         <div class="child-footer2">
+             <h5 class="child-footer1">Accessibility</h5>
+             <h5 class="child-footer1" style="margin-top: 10px;">Careers</h5>
+             <h5 class="child-footer1" style="margin-top: 10px;">Ad Choice</h5>
+             <h5 class="child-footer1" style="margin-top: 10px;">Mobile</h5>
+         </div>
+         <div class="child-footer3">
+             <h5 class="child-footer1">Talent Solutions</h5>
+             <h5 class="child-footer1" style="margin-top: 10px;">Marketing Solutions</h5>
+             <h5 class="child-footer1" style="margin-top: 10px;">Advertising</h5>
+             <h5 class="child-footer1" style="margin-top: 10px;">Small Business</h5>
+         </div>
+         <div class="child-footer4">
+            <div class="child-footer1" style="display: flex; gap: 10px;"><i style="color: black;" class="fa-solid fa-question"></i><h4>Questions?</h4></div>
+            <div class="child-footer1" style="display: flex; gap: 10px; margin-top: 10px;"><i style="color: black;" class="fa-solid fa-gear"></i><h4>Manage your account and privacy</h4></div>
+            <div class="child-footer1" style="display: flex; gap: 10px; margin-top: 10px;"><i style="color: black;" class="fa-solid fa-shield-halved"></i><h4>Recommendation transparency</h4></div>
+         </div>
+         <div class="select-footer">
+          <label style="color: #62615f;" for="Language">Select Language</label>
+           <div>
+               <select id="Language-select" name="select Language">
+                 <option value="">Select</option>
+                 <option value="English">English</option>
+                 <option value="Hindi">Hindi</option>
+                 <option value="Telugu">Telugu</option>
+                 <option value="Marati">Marati</option>
+                 <option value="Tamil">Tamil</option>
+                 <option value="Italian">Italian</option>
+               </select>
+           </div>   
+         </div>
+    </div>
+    
+  </div>
+
+  <script>
+    let enteredskills = document.getElementById("addSkill");
+    function addSkill(){
+      enteredskills.style.display = "block";
+      enteredskills.innerHTML = `
+      <div>
+        <input id="skill" type='text' placeholder='Enter any skill' style='width:50%; padding:10px;border-radius: 5px;'>
+        <button onclick='addingSkill()' style='padding:10px; background-color:green; color:white; font-weight:bold; border-radius: 5px; border:none'>Add Skill</button>  
+      </div>
+      `
+    }
+
+     let array = [];
+    function addingSkill(){
+      let skill = document.getElementById("skill");
+     let skills = document.getElementById("skillsName");
+       skills.innerHTML = ''
+     array.push(skill.value);
+     for (const i of array) {
+      skills.innerHTML += `<span style='color:black; font-weight:bold'>${i}</span> `
+     }
+       enteredskills.style.display = "none";
+    }
+
+    function changed(){
+      document.getElementById("connet").innerHTML= ` <div> Connected </div> `
+    }
+
+     function addedd(){
+      document.getElementById("connet2").innerHTML= ` <div> Connected </div> `
+    }
+
+     function changename(){
+      document.getElementById("connet3").innerHTML= ` <div> Connected </div> `
+    }
+
+     function addedname(){
+      document.getElementById("connet4").innerHTML= ` <div> Connected </div> `
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f4f2ee;
+  width: 100%;
+}
+.nav{
+  position:fixed;
+  top: 0px;
+  z-index: 1000;
+  width: 1520px;
+}
+.navbars{
+  height: 40px;
+  background-color: white;
+  border: 1px solid #dfdeda;
+  border-radius: 0px;
+  padding: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.sub-container{
+  /* position: sticky;
+  top: 50px;
+  z-index: 1000; */
+}
+.left-container{
+  width: 270px;
+  height: 660px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 55px;
+  border: 1px solid #dfdeda;
+  position: fixed;
+}
+.settings{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.preferences{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.signin{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.Visibility{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.privacy{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.Advertising{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.notification{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.right-container{
+  background-color: white;
+  margin-right: 150px;
+  width: 800px;
+  height: 100%;
+  margin-top: 80px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.Profile-container0{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.line-divide{
+  border: 1px solid #dfdeda;
+  margin-top: 8px;
+  width: 800px;
+}
+.Profile-container1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.Profile-container2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.extra-information{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 200px;
+}
+.extra-infor{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 440px;
+}
+.extra-information p:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.extra-infor p:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* onclick */
+
+.profile{
+    width: 800px;
+    height: 160px;
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    padding: 10px;   
+}
+.Profile-container0{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-solid{
+   margin-top: 20px;
+}
+.line-divide{
+  border: 1px solid #dfdeda;
+  margin-top: 2px;
+  width:800px;
+}
+.profile1{
+  /* border: 1px solid black; */
+  width: 800px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.general{
+  width: 800px;
+  height: 300px;
+  background-color:white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+.preferences{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1px;
+}
+.Partners1{
+  width: 800px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+.Profile-partner{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.account-details{
+  width: 800px;
+  height: 170px;
+  /* border: 1px solid black; */
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Hibernate{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* onclick */
+
+.securitys{
+  width: 800px;
+  height: 320px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.security-details{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+
+
+/* onclick */
+
+.profile-network{
+  width: 750px;
+  height: 100%;
+  /* background-color: white; */
+  border-radius: 10px;
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+.sub-profile{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+
+
+
+/* onclick */
+
+.your-data{
+  width: 800px;
+  height: 280px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 10px;
+}
+.dataa{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 2.5px;
+}
+.Invitationss{
+  width: 800px;
+  height: 230px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.data-reach{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 2.5px;
+}
+.experience{
+ width: 800px;
+  height: 230px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px; 
+}
+.Messaging{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 2.5px; 
+}
+.applications{
+  width: 800px;
+  height: 135px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px; 
+}
+.permitted{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 2.5px; 
+}

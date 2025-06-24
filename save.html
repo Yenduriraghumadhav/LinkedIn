@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="save.css">
+    <style>
+    .saved-posts {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .post-card {
+      background: white;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .post-card:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .post-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .post-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #004e41;
+      margin: 0;
+    }
+
+    .post-info {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .post-preview {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .post-actions {
+      margin-top: 12px;
+      text-align: right;
+    }
+
+    .post-actions a {
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .post-actions a:hover {
+      text-decoration: underline;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li>
+                    <div class="search-box">
+                        <input class="form" type="text" placeholder="Search...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-house"></i>
+                    <a class="nav-buttons" href="./home.html" style="color: black;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-grip"></i>
+                    <a class="nav-buttons" href="./personal.html" style="color: black;">personal-details</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-bell"></i>
+                    <a class="nav-buttons" href="./notifications.html" style="color: black;">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <a class="nav-buttons" href="./save.html" style="color: black;">Saved</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-sign-out-alt"></i>
+                    <a class="nav-buttons" href="./login.html" style="color: black;">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <div id="box"></div>
+   <script src="save.js"></script>
+</body>
+
+</html>

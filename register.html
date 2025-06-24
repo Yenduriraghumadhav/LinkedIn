@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f0f0;
+    }
+    .form-box {
+      width: 420px;
+      background: #fff;
+      padding: 25px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      width: 380px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 400px;
+      padding: 10px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    ul {
+      color: red;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.form-box {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.2);
+  padding: 40px 30px;
+  width: 350px;
+  animation: fadeInUp 1s ease-out;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #00f2ff, #ff00c8, #00f2ff, #ff00c8);
+  animation: rotate 6s linear infinite;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #00f2ff;
+  z-index: 1;
+  position: relative;
+}
+
+.form-box input {
+  width: 300px;
+  padding: 12px;
+  margin: 10px ;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  z-index: 1;
+  position: relative;
+  margin-right: 20px;
+}
+
+.form-box input:focus {
+  box-shadow: 0 0 10px red;
+  border: 1px solid #00f2ff;
+}
+
+.form-box input:hover{
+  background: linear-gradient(90deg, orange, red, white);
+   box-shadow: 0 0 10px #00f2ff;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #00f2ff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.form-box button {
+  transition: 0.3s ease; 
+}
+
+.form-box button:hover {
+  background: #00cfff;
+  box-shadow: 0 0 15px red;
+}
+
+
+#errorList {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  color: #ff4d4d;
+  font-size: 14px;
+  z-index: 1;
+  position: relative;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Register</h2>
+    <input type="text" id="name" placeholder="Full Name" />
+    <input type="email" id="email" placeholder="Email" />
+    <input type="number" id="age" placeholder="Age" />
+    <input type="password" id="password" placeholder="Password" />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+    <button onclick="register()">Register</button>
+    <ul id="errorList"></ul>
+  </div>
+
+
+ <script src="register.js"></script>
+</body>
+</html>

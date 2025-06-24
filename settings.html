@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="navbars">
+              <i style="color: #0a66c2;" class="fa-brands fa-linkedin"></i>
+              <i style="color: #004e41;" class="fa-solid fa-registered"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="sub-container">
+        <div class="left-container">
+            <div class="settings"><i style="color: #004e41; font-size: 30px; margin-bottom: 20px;" class="fa-solid fa-registered"></i><h1>Settings</h1></div>
+            <div onclick="changeContent()">
+                <div id="preferences" class="preferences">
+                    <i class="fa-solid fa-user"></i><h2 style="margin-top: 17px;">Account preferences</h2>
+                </div>
+            </div> <div id="preferences-content" style="display:none;"></div>
+
+            <div onclick="newcontent()">
+                <div class="signin">
+                    <i class="fa-solid fa-lock"></i><h2 style="margin-top: 17px;">Sign in & security</h2>
+                </div>
+            </div> 
+
+
+            <div onclick="visiblecontent()">
+                <div class="Visibility">
+                    <i class="fa-solid fa-eye"></i><h2 style="margin-top: 17px;">Visibility</h2>
+                </div>
+            </div> <div id="visibility"></div>
+
+           <div onclick="private()">
+              <div class="privacy">
+                <i class="fa-solid fa-shield-halved"></i><h2 style="margin-top: 17px;">Data privacy</h2>
+              </div>
+           </div> <div id="privacy"></div>
+
+            <div class="Advertising"><i class="fa-regular fa-newspaper"></i><h2 style="margin-top: 10px;">Advertising data</h2></div>
+            <div class="notification"><i class="fa-solid fa-bell"></i><h2 style="margin-top: 17px;">Notifications</h2></div>
+        </div>
+        </div>
+        <div class="right-container">
+           <h2>Notifications you receive</h2>
+           <div class="Profile-container0"><p>Searching for a job</p><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="line-divide"></div>
+           <div class="Profile-container1"><p>Hiring someone</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Connecting with others</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Network catch-up updates</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Posting and commenting</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Messaging</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Groups</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Pages</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Attending events</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>News and reports</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Updating your profile</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Verifications</p><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="line-divide"></div>
+           <div class="Profile-container2"><p>Games</p><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+    </div>
+    <div>
+        <div class="extra-information">
+            <p>Help center</p>
+            <p>Professional Community Policies</p>
+            <p>Privacy Policy</p>
+            <p>Accessibility</p>
+            <p>Recommendation Transparency</p>
+        </div>
+        <div class="extra-infor">
+            <p>User Agreement</p>
+            <p>End User License Agreement</p>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

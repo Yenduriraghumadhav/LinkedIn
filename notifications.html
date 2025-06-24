@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+      <nav class="navbar">
+    <div class="collaps" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li>
+          <div class="search-box">
+            <input class="form" type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+          </div>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-house"></i>
+          <a class="nav-buttons" href="./home.html" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-grip"></i>
+          <a class="nav-buttons" href="./personal.html" style="color: black;">personal-details</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-bell"></i>
+          <a class="nav-buttons" href="./notifications.html" style="color: black;">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-bookmark"></i>
+          <a class="nav-buttons" href="./save.html" style="color: black;">Saved</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-solid fa-sign-out-alt"></i>
+          <a class="nav-buttons" href="./login.html" style="color: black;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+      <div class="left-child"> 
+          <div id="personal-details">
+             <h3>Rajesh var Reddy</h3>
+             <p>Student of : Pulla Reddy Engineering Collage Kurnool</p>
+             <p>Skills: C ,C++,Java-Script,Python</p>
+             <p>Hyderabad,Telangana</p>
+          </div>
+          <div class="settings">
+            <h3>Manage your notifications</h3>
+            <a href="settings.html"><div class="child-settings"><h3>View settings</h3></div></a>
+          </div>
+      </div> 
+      <div class="center-child">
+        <div class="centerchild-butttons">
+
+               <button onclick="jobportal('all')" style="padding: 10px; border-radius: 20px; background-color: green; color: white; border: 1px solid green;">All</button>
+               <div onclick="jobportal('jobs')"><button style="padding: 10px; border-radius: 20px;">Jobs</button></div>
+               <div  id="for-jobs">
+               
+               </div>
+               <div onclick="mypost()"><button style="padding: 10px; border-radius: 20px;">My Posts</button></div>
+               <div id="posts"></div>
+
+               <button style="padding: 10px; border-radius: 20px;">Mentions</button>
+             
+        </div>
+        <div class="parent-notification">
+         <div id="notifications"></div> 
+        </div>
+      </div>
+      <div class="right-child">
+          <div class="adds">
+              <img style="width: 275px; height: 250px; margin-top: 10px; border-radius: 50px; margin-right: 100px;border: 1px solid #dfdeda;"src="/adds.png"alt="Adds-image">
+          </div>
+          <div class="sticky-wrapper">
+               <div class="extra-information"><p>About</p><p>Accessibility</p><p>Help Center</p></div>
+               <div class="extra-information"><p>Privacy & Terms</p><p>Ad Choices</p></div>
+               <div class="extra-information"><p>Advertising</p><p>Business Services</p></div>
+               <div class="extra-information"><a href="https://apps.microsoft.com/detail/9wzdncrfj4q7?launch=true&mode=full&hl=en-us&gl=in&ocid=bingwebsearch"><p>Get the LinkedIn app</p></a><p>More @</p></div>
+          </div>
+
+     </div>
+  </div>
+  <script src="notifications.js"></script>
+</body>
+</html>
